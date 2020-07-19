@@ -44,3 +44,21 @@ a{
 a:hover{
     color: rgb(200, 100, 200)
 }
+
+@media only screen and (min-width: 661px){
+    a.text{
+        display: inline;
+    }
+    a.icon{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 660px){
+    a.text{
+        display: none;
+    }
+    a.icon{
+        display: inline-block;
+    }
+}
