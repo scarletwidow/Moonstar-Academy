@@ -9,7 +9,7 @@ body{
 }
 
 nav.container{
-    background-color: rgb(247, 247, 247);
+    background-color: rgb(255, 255, 255);
     margin: 0;
     height: 64px;
     display: flex;
@@ -43,6 +43,48 @@ a{
 
 a:hover{
     color: rgb(200, 100, 200)
+}
+
+#banner{
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+#banner img{
+    width: 60%;
+    padding: 32px 24px;
+}
+
+#mission{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    padding: 32px 24px;
+    margin-right: 20px;
+}
+
+#mission h1{
+    font-size: 2em;
+    font-weight: 900;
+    width: 75%;
+}
+#mission p{
+    width: 75%;
+    padding-bottom: 24px;
+}
+
+#mission button{
+    background-color: rgb(71, 67, 67);
+    color: rgb(255, 255, 255);
+    width: 75%;
+    padding: 10px;
+    border: none;
 }
 
 @media only screen and (min-width: 661px){
