@@ -8,6 +8,7 @@ body{
     font-size: 16px;
 }
 
+/* Nav */
 nav.container{
     background-color: rgb(255, 255, 255);
     margin: 0;
@@ -17,34 +18,29 @@ nav.container{
     justify-content: space-between;
     align-items: center;
 }
-
-
 nav p{
     padding-left: 24px;
     text-transform: uppercase;
     font-size: 1.5em;
 }
-
 ul{
     list-style-type: none;
     float: right;
     padding-right: 24px;   
 }
-
 li{
     display: inline;
 }
-
 a{
     text-decoration: none;
     color: rgb(0, 0, 0);
     padding: 16px;
 }
-
 a:hover{
     color: rgb(200, 100, 200)
 }
 
+/* Banner */
 #banner{
     background-color: rgb(247, 247, 247);
     display: flex;
@@ -53,13 +49,11 @@ a:hover{
     align-items: center;
     align-content: center;
 }
-
 #banner img{
     width: 60%;
     height: auto;
     padding: 32px 24px;
 }
-
 #mission{
     display: flex;
     flex-flow: column nowrap;
@@ -69,7 +63,6 @@ a:hover{
     padding: 32px 24px;
     margin-right: 20px;
 }
-
 #mission h1{
     font-size: 2em;
     font-weight: 900;
@@ -79,7 +72,6 @@ a:hover{
     width: 75%;
     padding-bottom: 24px;
 }
-
 #mission button{
     background-color: rgb(71, 67, 67);
     color: rgb(255, 255, 255);
@@ -88,55 +80,69 @@ a:hover{
     border: none;
 }
 
+/* Information */
 #info{
     display: flex;
     flex-flow: row nowrap;
     padding-bottom: 32px;
     /* background-color: rgb(71, 67, 67); */
 }
-
 #extraInfo{
     width: 60%;
     margin: 32px 24px;
 }
-
 #extraInfo img{
     width: 100%;
     height: auto;
 }
 
-#schedule{
+/* Desktop Schedule */
+#desktopSchedule{
     width: 40%;
     margin: 32px 0;
 }
-
-.Orientation{
+#desktopSchedule .Orientation{
    display: flex;
    flex-flow: row nowrap;
    padding: 16px;
 }
-
-.Orientation img{
+#desktopSchedule .Orientation img{
     width: 35%;
     height: auto;
     padding-bottom: 16px;
 }
-
-.Orientation .information{
+#desktopSchedule .Orientation .information{
     width: 65%;
     padding: 16px;
 }
+#desktopSchedule .Orientation button{
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: rgb(115, 187, 230);
+}
+#desktopSchedule .guest{
+    background-color: rgb(221, 221, 221);
+}
 
-.Orientation button{
+/* Moblie Schedule */
+#mobileSchedule{
+    padding: 16px;
+}
+#mobileSchedule img{
+    width: 100%;
+    height: auto;
+}
+#mobileSchedule .information{
+    padding: 0  0 64px 16px;
+}
+#mobileSchedule .Orientation button{
     background-color: rgb(255, 255, 255);
     border: none;
     color: rgb(115, 187, 230);
 }
 
-.guest{
-    background-color: rgb(221, 221, 221);
-}
-@media only screen and (min-width: 876px){
+/* Media Queries */
+@media only screen and (min-width: 691px){
     a.text{
         display: inline;
     }
@@ -144,16 +150,22 @@ a:hover{
         display: none;
     }
 }
-
-@media only screen and (max-width: 875px){
+@media only screen and (max-width: 690px){
     a.text{
         display: none;
     }
     a.icon{
-        display: inline-block;
+        display: inline;
     }
 }
-
+@media only screen and (min-width: 876px){
+    #desktopSchedule{
+        display: inline-block;
+    }
+    #mobileSchedule{
+        display: none;
+    }
+}
 @media only screen and (max-width: 875px){
     #banner{
         flex-flow: column wrap;
@@ -167,5 +179,19 @@ a:hover{
         width: 100%;
         margin: 0;
         padding: 0;
+    }
+    #banner button{
+        background-color: rgb(221, 221, 221);
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    #extraInfo{
+        display: none;
+    }
+    #desktopSchedule{
+        display: none;
+    }
+    #mobileSchedule{
+        display: inline-block;
     }
 }
