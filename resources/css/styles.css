@@ -88,6 +88,54 @@ a:hover{
     border: none;
 }
 
+#info{
+    display: flex;
+    flex-flow: row nowrap;
+    padding-bottom: 32px;
+    /* background-color: rgb(71, 67, 67); */
+}
+
+#extraInfo{
+    width: 60%;
+    margin: 32px 24px;
+}
+
+#extraInfo img{
+    width: 100%;
+    height: auto;
+}
+
+#schedule{
+    width: 40%;
+    margin: 32px 0;
+}
+
+.Orientation{
+   display: flex;
+   flex-flow: row nowrap;
+   padding: 16px;
+}
+
+.Orientation img{
+    width: 35%;
+    height: auto;
+    padding-bottom: 16px;
+}
+
+.Orientation .information{
+    width: 65%;
+    padding: 16px;
+}
+
+.Orientation button{
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: rgb(115, 187, 230);
+}
+
+.guest{
+    background-color: rgb(221, 221, 221);
+}
 @media only screen and (min-width: 876px){
     a.text{
         display: inline;
