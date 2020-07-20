@@ -56,6 +56,7 @@ a:hover{
 
 #banner img{
     width: 60%;
+    height: auto;
     padding: 32px 24px;
 }
 
@@ -87,7 +88,7 @@ a:hover{
     border: none;
 }
 
-@media only screen and (min-width: 661px){
+@media only screen and (min-width: 876px){
     a.text{
         display: inline;
     }
@@ -96,11 +97,27 @@ a:hover{
     }
 }
 
-@media only screen and (max-width: 660px){
+@media only screen and (max-width: 875px){
     a.text{
         display: none;
     }
     a.icon{
         display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 875px){
+    #banner{
+        flex-flow: column wrap;
+        text-align: center;
+    }
+    #mission{
+        align-content: center;
+        align-items: center;
+    }
+    #banner img{
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
 }
