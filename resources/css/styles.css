@@ -95,6 +95,9 @@ a:hover{
     width: 100%;
     height: auto;
 }
+#extraInfo h2{
+    font-size: 2.2rem;
+}
 
 /* Desktop Schedule */
 #desktopSchedule{
@@ -142,6 +145,44 @@ a:hover{
     background-color: rgb(255, 255, 255);
     border: none;
     color: rgb(115, 187, 230);
+}
+
+/* Courses */
+#courses{
+    background-color: rgb(247, 247, 247);
+    padding: 32px 72px;
+}
+.header{
+    text-align: center;
+    font-size: 2.2rem;
+    padding: 32px 0;
+}
+#witchCourses{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly; 
+}
+.course{
+    background-color: rgb(255, 255, 255);
+    width: 30%;
+    height: auto;
+    padding-bottom: 25px;
+}
+.course img{
+    width: 100%;
+    height: auto;
+    padding-bottom: 16px;
+}
+.course h3{
+    padding: 16px;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.course p{
+    padding: 0 16px 8px 16px;
+}
+.course span{
+    padding: 0 16px 24px 16px;
 }
 
 /* Media Queries */
