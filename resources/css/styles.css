@@ -315,4 +315,13 @@ footer{
     #coursesMobile{
         display: flex;
     }
+    #videoHelp{
+        display: none;
+    }
+    #video{
+        width: 100%;
+    }
+    .right{
+        display: none;
+    }
 }
