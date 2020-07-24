@@ -198,6 +198,55 @@ a:hover{
     padding-left: 16px;
 }
 
+/* Thesis */
+.last{
+    display: flex;
+    flex-flow: row nowrap;
+}
+#video {
+    width: 60%;
+    margin: 32px 24px;
+}
+#video video{
+    width: 100%;
+    padding-bottom: 24px;
+}
+#video h4{
+    padding-bottom: 8px;
+    font-size: 1.3rem;
+}
+#videoHelp{
+    width: 40%;
+    height: auto;
+}
+.Prototype{
+    display: flex;
+    flex-flow: row nowrap;
+    border-bottom: 1px solid rgb(247, 247, 247);
+}
+.A{
+    background-color: rgb(247, 247, 247);
+}
+.Prototype img{
+    width: 35%;
+    height: auto;
+    padding: 16px;
+}
+.explanation{
+    width: 65%;
+}
+
+/* Footer */
+footer{
+    padding: 16px 0 50px 24px;
+    border-top: 2px solid rgb(247, 247, 247);
+    font-size: 0.8rem;
+}
+.right{
+    float: right;
+    padding-right: 16px;
+}
+
 /* Media Queries */
 @media only screen and (min-width: 691px){
     a.text{
