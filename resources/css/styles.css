@@ -133,6 +133,7 @@ a:hover{
 /* Moblie Schedule */
 #mobileSchedule{
     padding: 16px;
+    border-bottom: 1px solid black;
 }
 #mobileSchedule img{
     width: 100%;
@@ -181,8 +182,20 @@ a:hover{
 .course p{
     padding: 0 16px 8px 16px;
 }
-.course span{
+.corseOptions{
     padding: 0 16px 24px 16px;
+}
+.corseChoiceMobile{
+    background-color: rgb(247, 247, 247);
+    padding: 16px 16px;
+    margin: 16px 16px 8px 16px;
+}
+#corsesMobile h2{
+    padding-bottom: 16px;
+}
+.corseChoiceMobile h3{
+    font-size: 1.3rem;
+    padding-left: 16px;
 }
 
 /* Media Queries */
@@ -210,6 +223,12 @@ a:hover{
         display: inline-block;
     }
     #mobileSchedule{
+        display: none;
+    }
+    #courses{
+        display: inline-block;
+    }
+    #corsesMobile{
         display: none;
     }
 }
@@ -240,5 +259,11 @@ a:hover{
     }
     #mobileSchedule{
         display: inline-block;
+    }
+    #courses{
+        display: none;
+    }
+    #coursesMobile{
+        display: flex;
     }
 }
